@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Threads | Modern Fashion</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff;
+    }
+
+    header nav {
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #ff6f61;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x500?text=Urban+Threads') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      height: auto;
+      padding: 50px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero img {
+      max-width: 350px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .hero .btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #ff6f61;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .hero .btn:hover {
+      background: #e75c50;
+    }
+
+    .products, .gallery, .about {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .product-grid, .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 8px;
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .gallery-grid img {
+      width: 172px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    .about {
+      background: #f0f0f0;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer .social a {
+      margin: 0 10px;
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer .social a:hover {
+      color: #ff6f61;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Urban Threads</div>
+      <ul class="nav-links">
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Style Meets Street</h1>
+      <!-- 🌟 Logo inserted here -->
+      <img src="logo 4.jpg"alt="Urban Threads Logo">
+      <p>New summer collection out now.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section id="products" class="products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="versate jacket.jpeg" alt="Jacket">
+          <h3>Denim Jacket</h3>
+          <p>$20.00</p>
+        </div>
+        <div class="product-card">
+          <img src="/hoodie.webp" alt="Hoodie">
+          <h3>Graphic Hoodie</h3>
+          <p>$30.00</p>
+        </div>
+        <div class="product-card">
+          <img src="/sneakers.webp" alt="Chunky Sneakers">
+          <h3>Chunky Sneakers</h3>
+          <p>$100.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Lookbook</h2>
+      <p>Discover our latest styles in action</p>
+      <div class="gallery-grid">
+        <img src="look 1.jpg" alt="Look 1">
+        <img src="look 2.jpg"alt="Look 2">
+        <img src="look w3.jpg" alt="Look 3">
+        <img src="look 4.jpg" alt="Look 4">
+        <img src="look 5.jpg" alt="Look 5">
+        <img src="look 6.jpg"alt="Look 6">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Urban Threads</h2>
+      <p>Urban Threads blends streetwear and minimalism, offering bold fashion for bold people. Every piece is crafted for comfort, style, and individuality.</p>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 Urban Threads</p>
+    <div class="social">
+      <a href="https://www.instagram.com/y_a_s_h133" target="_blank">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+    </div>
+  </footer>
+
+</body>
+</html>
